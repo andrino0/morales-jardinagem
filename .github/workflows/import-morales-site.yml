@@ -1,8 +1,8 @@
 name: Import original Morales Jardinagem website
 on:
+  pull_request_target:
+    types: [opened]
   workflow_dispatch:
-  schedule:
-    - cron: "*/5 * * * *"
 permissions:
   contents: write
 jobs:
